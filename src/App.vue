@@ -22,8 +22,8 @@ function navigate(page: Page): void {
     state.page = page;
 }
 
-// seed('projetproducts')
-// seed40articles('projetproducts');
+// seed('vueprojectproducts')
+// seed40articles('vueprojectproducts');
 </script>
 
 <template>
