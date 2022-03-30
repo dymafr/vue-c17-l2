@@ -8,6 +8,7 @@ export async function fetchProducts(
   if (filter.category !== 'all') {
     query.append('category', filter.category);
   }
+  query.append('limit', '20');
   query.append('price', `$lte:${filter.priceRange[1]}`);
   query.append('price', `$gte:${filter.priceRange[0]}`);
   const products = await (
