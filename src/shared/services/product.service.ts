@@ -1,8 +1,7 @@
 import type { FiltersInterface, ProductInterface } from '../../interfaces';
 
 export async function fetchProducts(
-  filter: FiltersInterface,
-  page: number
+  filter: FiltersInterface
 ): Promise<ProductInterface[] | ProductInterface> {
   const query = new URLSearchParams();
   if (filter.category !== 'all') {
